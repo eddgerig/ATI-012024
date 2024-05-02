@@ -8,9 +8,14 @@ header{
     padding: 20px;
     
     
+    
 }
+header nav ul {
+    list-style-type: none;
+}
+
 section{
-    width: 840px;
+    width: 900px;
     
     margin: 0 auto;
     margin-top: 30px;
@@ -46,32 +51,46 @@ nav{
   
 }
 
-.tarjeta{
+.tarjeta {
     position: relative;
     margin-top: 0;
+    margin-left: 20px;
     display: inline-block;
     background-color: #F5F5F5;
     width: 200px;
-    height:220px;
+    height: 220px;
     text-align: center;
     vertical-align: top;
     margin-bottom: 20px;
-    
-
+    transition: background-color 0.3s; 
 }
 
-.tarjeta p{
- 
-position: absolute;
-bottom: 0; 
-padding-bottom: 10px;
-left: 50%; 
-transform: translateX(-50%); 
-font-size: 14px;
-width: 200px;
-
- 
+.tarjeta:hover {
+    background-color: #99c5dd; 
+    transform: scale(1.1) rotate(5deg); 
 }
+
+.tarjeta img {
+    width: 100px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    transition: transform 0.3s; 
+}
+
+.tarjeta p {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    width: 200px;
+    transition: transform 0.3s; 
+}
+
+
+
 
 #buscar{
     
@@ -96,6 +115,7 @@ width: 200px;
 #saludo{
     font-family: 'Roboto';
     margin-right: 350px;
+    font-size: 20px;
     
 }
 

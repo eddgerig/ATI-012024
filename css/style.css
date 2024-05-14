@@ -162,6 +162,7 @@ footer{
     padding: 0%;
     width: 300px;
     height: auto;
+    
    
   }
   
@@ -171,13 +172,27 @@ footer{
     border: 2px solid black;
     width: 60%;
     padding: 0px 0 0 20px;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     box-shadow: 5px 5px 0px gray;
+    background-color: transparent;
+    
     
   }
 
-h1{color: orange;}
+  .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 150px;
+    
+    
+  }
+
+h1{color: orange;
+margin-top: 20px;}
 a{color: orange;}
 a:visited{color: red;}
 

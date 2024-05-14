@@ -1,0 +1,13 @@
+{
+    "nombre": "Edgar Gerig",
+    "descripcion": "Soy estudiante de la escuela de Computación en la Facultad de Ciencias de la UCV.  Me apasiona explorar diferentes aspectos de esta disciplina, desde el desarrollo de software hasta la gestión de redes y la ciberseguridad. Además, tengo un interés particular en el diseño gráfico.",
+    "color": "Negro",
+    "libro": ["Harry Potter"],
+    "musica": ["Rock Alternativo"],
+    "video_juego": ["Need for speed","MarioKart"],
+    "lenguajes": ["C","C++","Java","Python"],
+    "email": "gerigucv@gmail.com",
+    "ci": "25858414",
+    "genero": "masculino",
+    "fecha_nacimiento": "23/12/1996"
+}

@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Obtener idioma
+    const lang = document.documentElement.lang; 
+    
+   
+    // Cargar archivo JSON de configuración
+  
+      let configURL = "";
+      if (lang === "es") {
+          configURL = "/conf/configES.json";
+      } else if (lang === "en") {
+          configURL = "/conf/configEN.json";
+      } else {
+          configURL = "/conf/configES.json";
+      }
+
   // configuracion
-  fetch("/conf/configES.json")
+  fetch(configURL)
     .then((response) => response.json())
     .then((config) => {
       document.getElementById("curso").innerHTML = config.sitio.join(" ");
@@ -52,5 +67,5 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) =>
       console.error("Error al cargar el archivo de estudiantes:", error)
-    ); // Manejo de errores
+    );
 });

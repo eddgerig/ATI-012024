@@ -20,8 +20,17 @@ section{
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
     
     
+    
+}
+
+#mensaje{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #92c5fc;
+    text-align: center;
 }
 img {
     width: 100px;
@@ -45,6 +54,7 @@ header nav ul{
 }
 #buscar input{
     padding: 5px;
+    width: 220px;
 }
 
 #buscar button{
@@ -189,6 +199,7 @@ footer{
     padding-top: 150px;
     
     
+    
   }
 
 h1{color: orange;
@@ -206,6 +217,9 @@ a:visited{color: red;}
     margin-top: 10px;
 }
 
+.filtro{
+    display: none;
+}
 
 /* Media query para dispositivos móviles (320px - 480px) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -264,6 +278,9 @@ a:visited{color: red;}
         margin-top: 10px;
         margin-left: 0px;
         
+    }
+    .profile{
+        flex-direction: column;
     }
  }
 

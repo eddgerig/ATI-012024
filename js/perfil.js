@@ -2,11 +2,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // URL
   const urlParams = new URLSearchParams(window.location.search);
   const perfilID = urlParams.get("perfil");
+ 
+      // Obtener idioma
+const lang = document.documentElement.lang; 
 
+   
   // Realizar una solicitud fetch para obtener los datos del perfil
   if (perfilID) {
+    let configURL = "";
+    if (lang === "es") {
+        configURL = "/conf/configES.json";
+    } else if (lang === "en") {
+        configURL = "/conf/configEN.json";
+    } else {
+        configURL = "/conf/configES.json";
+    }
     // configuracion
-    fetch("/conf/configES.json")
+    fetch(configURL)
       .then((response) => response.json())
       .then((config) => {
         // perfil

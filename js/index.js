@@ -69,3 +69,29 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error al cargar el archivo de estudiantes:", error)
     );
 });
+document.addEventListener("keyup", e => {
+    if (e.target.matches("#busqueda")) {
+        const query = e.target.value.toLowerCase();
+        const tarjetas = document.querySelectorAll(".tarjeta");
+        let found = false;
+
+        tarjetas.forEach(tarjeta => {
+            if (tarjeta.textContent.toLowerCase().includes(query)) {
+                tarjeta.classList.remove("filtro");
+                found = true;
+            } else {
+                tarjeta.classList.add("filtro");
+            }
+        });
+
+        if (!found) {
+            console.log(`No hay alumnos que tengan en su nombre: ${query}`);
+            const mensaje = document.getElementById("mensaje");
+            
+            mensaje.textContent = `No hay alumnos que tengan en su nombre: ${query}`;
+
+        }else{
+            mensaje.textContent = "";
+        }
+    }
+});

@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
       let configURL = "";
       if (lang === "es") {
-          configURL = "/conf/configES.json";
+          configURL = "../conf/configES.json";
       } else if (lang === "en") {
-          configURL = "/conf/configEN.json";
+          configURL = "../conf/configEN.json";
       } else {
-          configURL = "/conf/configES.json";
+          configURL = "../conf/configES.json";
       }
 
   // configuracion
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(config.sitio);
 
       // perfil
-      fetch("/25858414/perfil.json")
+      fetch("../25858414/perfil.json")
         .then((response) => response.json())
         .then((perfil) => {
           document.getElementById("saludo").innerHTML =
